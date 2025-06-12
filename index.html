@@ -3,328 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globe Nest</title>
+    <title>Coffee Shop</title>
     <!-- tailwind link -->
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-       <!-- google font family (Poppins) -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+<!-- fontawesome link -->
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    body{
+       font-family: 'Playfair Display', serif;
+    }
+</style>
+
 
 </head>
 <body>
-    <!-- navbar section -->
-     <div class="flex justify-between items-center px-5 py-5  " >
+    <!-- heading section -->
+    <div class="bg-[url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center h-screen flex justify-center items-center" class="full">
         <div>
-            <h1 class="lg:text-4xl mb:text-2xl text-xl text-blue-950 font-bold">Globe Nest</h1>
+    <h1 class="text-8xl text-white font-extrabold ">Your Daily Cup of Joy</h1>
+    <p  class="text-xl text-white text-center pt-4 ">Come taste the warmth of hand-crafted coffee, brewed<br> to perfection just for you.</p>
+    <div class="flex justify-center items-center gap-3 py-5">  
+        <button class="border-2 border-white rounded-full bg-[#6F4E37] h-12 w-30 text-white font-bold cursor-pointer">View Menu </button>
+        <button  class="border-2 border-white rounded-full  h-12 w-30 text-white  hover:text-black  hover:bg-white font-bold cursor-pointer">Oder Now</button>
+     </div>
+    </div>     
+    </div>
+
+    <!-- Our Story section -->
+     <div class="grid grid-cols-1 md:grid-cols-2 my-16 w-11/12 mx-auto lg:gap-10 gap-5">
+        <!-- left side -->
+        <div>
+            <img src="https://thriving-heliotrope-5927b5.netlify.app/img/about.png" class="rounded-2xl w-full " alt="">
+        </div>
+        <!-- right side -->
+
+        <div class="mt-20">
+             <div class="">
+            <h1 class="text-5xl text-amber-950">Our Story</h1>
+            <p class="pt-4 text-lg text-gray-700">Our journey began with a simple love for exceptional coffee. We source the finest organic beans from single-origin farms and roast them daily in small batches to unlock their unique flavors. Our mission is to bring you a cup of coffee that's not just a drink, but an experience.</p>
+        </div>
+        <div class="flex  bg-yellow-100 rounded-lg mt-5 p-5">
+            <div class="bg-yellow-100" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivbsbyo8aPjn7FjlLmMFb8otwI7Zg4s1jgA&s" class="h-18 w-18 rounded-full border-7 border-white " alt="">
+            </div>
+            <div class="p-4">
+                <h1 class="text-lg font-bold">Mrs.Luella Bates</h1>
+                <p class="text-gray-700">Founder & Head Barista</p>
+            </div>
+        </div>
+       </div>
+       </div>
+
+       <!-- Our Signature Drinks start -->
+
+       <div class=" bg-yellow-100 mt-8 py-12"> 
+         <div class="text-center items-center justify-center">
+             <h1 class="text-5xl  text-amber-950 font-bold">Our Signature Drinks</h1>
+
 
         </div>
-        <div class="md:block hidden ">
-            <ul class="flex gap-5">
-                <li><a class="text-gray-800" href=" ">Home </a></li>
-                <li><a class="text-gray-800" href="#destinations">Destinations</a></li>
-                <li> <a class="text-gray-800" href=" ">Packages</a></li>
-            </ul>
-            
+         <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 w-11/12 mx-auto gap-5">
+      
+       
+        <!-- first card -->
+        <div class="bg-white rounded-lg  shadow-sm ">
+            <div>
+                <img src="https://img.freepik.com/free-photo/steaming-cup-coffee-saucer-with-coffee-beans-scattered-around_9975-124454.jpg?ga=GA1.1.1890969058.1720719749&semt=ais_items_boosted&w=740" class="h-60 rounded-t-lg w-full" alt="">
+            </div>
+
+            <div class="py-5 items-center justify-center text-center">
+                <h4 class="text-2xl text-[#3a2d21] font-extrabold ">Espresso</h4>
+                <p class="text-gray-700 font-medium">A classic shot of rich, intense coffee.</p>
+                <p class=" text-2xl text-[#3a2d21] font-extrabold ">$2.50</p>
+
+            </div>
+
         </div>
-        <button class=" bg-blue-700 text-white rounded-lg px-2 py-3 font-bold hover:bg-blue-400 cursor-pointer">Contract Us</button>
+
+        <!-- second card  -->
+        <div class="bg-white rounded-lg  shadow-sm ">
+            <div>
+                <img src="https://img.freepik.com/premium-photo/glass-coffee-with-whipped-cream-chocolate-syrup_917856-25934.jpg?ga=GA1.1.1890969058.1720719749&semt=ais_items_boosted&w=740" class="h-60 rounded-t-lg w-full" alt="">
+            </div>
+
+            <div class="py-5 items-center justify-center text-center">
+                <h4 class="text-2xl text-[#3a2d21] font-extrabold ">Mocha Frappe</h4>
+                <p class="text-gray-700 font-medium">A cool blend of chocolate, coffee, and ice.</p>
+                <p class=" text-2xl text-[#3a2d21] font-extrabold ">$4.50</p>
+
+            </div>
+
+        </div>
+
+        <!-- third card -->
+          <div class="bg-white rounded-lg  shadow-sm ">
+            <div>
+                <img src="https://img.freepik.com/free-photo/close-up-aromatic-beverage-with-spices_23-2148349610.jpg?ga=GA1.1.1890969058.1720719749&semt=ais_items_boosted&w=740" class="h-60 rounded-t-lg w-full" alt="">
+            </div>
+
+            <div class="py-5 items-center justify-center text-center">
+                <h4 class="text-2xl text-[#3a2d21] font-extrabold ">Artisan Latte</h4>
+                <p class="text-gray-700 font-medium">Creamy steamed milk over espresso.</p>
+                <p class=" text-2xl text-[#3a2d21] font-extrabold ">$3.75</p>
+
+            </div>
+
+        </div>
+
+          <!-- fouth card -->
+          <div class="bg-white rounded-lg  shadow-sm ">
+            <div>
+                <img src="https://img.freepik.com/free-photo/cup-coffee-white-saucer_114579-20024.jpg?ga=GA1.1.1890969058.1720719749&semt=ais_items_boosted&w=740" class="h-60 rounded-t-lg w-full" alt="">
+            </div>
+
+            <div class="py-5 items-center justify-center text-center">
+                <h4 class="text-2xl text-[#3a2d21] font-extrabold ">Americano</h4>
+                <p class="text-gray-700 font-medium">Espresso shots topped with hot water.</p>
+                <p class=" text-2xl text-[#3a2d21] font-extrabold ">$3.00</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+        
+   
+     <!-- Our Signature Drinks end -->
+
+
+    <!-- What Our Customers Say start here -->
+     
+
+         <div class=" bg-white mt-8 py-12">
+            <div class="text-center items-center justify-center" >
+                  <h1 class="text-5xl  text-amber-950 font-bold">What Our Customers Say</h1>
+
+            </div>
+      
+
+
+            <div class=" grid grid-cols-1  lg:grid-cols-3 mt-10 w-11/12 mx-auto gap-8">
+                  <!-- 1st card -->
+        <div class="  bg-yellow-50 rounded-lg shadow-2xl p-12 ">
+            <p class="font-medium"><i>"The best coffee in town! The cozy ambiance makes it my favorite place to work and relax."</i></p>
+
+            <div class="flex">
+                <p class="text-lg font-bold text-amber-950">- Sarah Jenkins</p>
+                
+            </div>
+
+        </div>
+
+        
+        <!-- 2nd card -->
+        <div class=" bg-yellow-50 rounded-lg shadow-2xl p-12 ">
+            <p class="font-medium"><i>"I love their Mocha Frappe. The staff is super friendly and welcoming. Highly recommended!"</i></p>
+
+            <div class="flex">
+                <p class="text-lg font-bold text-amber-950">- Michael Chen</p>
+               
+            </div>
+
+        </div>
+
+
+        
+        <!-- 3rd card -->
+        <div class=" bg-yellow-50 rounded-lg shadow-2xl  p-12 ">
+            <p class="font-medium"><i>"A perfect spot for a morning coffee. The quality of their espresso is unmatched. A true hidden gem!"</i></p>
+
+            <div class="flex">
+                <p class="text-lg font-bold text-amber-950">-Emily Carter</p>
+              
+            </div>
+
+        </div>
+
+            </div>
+      
 
      </div>
-       <!-- navbar section end -->
-
-       <!-- Explore The World With Us! starts here -->
-        <div class="bg-[url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop)] bg-cover bg-center h-screen flex justify-center items-center relative  ">
-            <div class="absolute bg-black opacity-50 z-10 inset-0"></div>
-           <div class="text-center space-y-10 pt-20 relative z-20">
-            <h1 class="font-extrabold text-2xl lg:text-7xl text-white md:text-3xl ">Explore The World With Us!</h1>
-            <p class="font-medium text-xl md:text-2xl text-white " >Find the best destinations, tours, and experiences.</p>
-            <div class="flex flex-col md:flex=row px-5 gap-6 justify-center items-center">
-                <button class=" bg-blue-700 text-white rounded-full px-5 py-3 font-bold hover:bg-blue-500 cursor-pointer w-fit " >Book Now</button>
-                <button  class=" bg-white text-blue-700 rounded-full px-5 py-3 font-bold hover:bg-blue-100 cursor-pointer w-fit  ">Explore Destination</button>
-            </div>
-        </div> 
-      </div>
-       <!-- Explore The World With Us! ends here -->
-
-
-       <!-- Popular Destinations starts -->
-          <div class="py-14 bg-sky-50 " id="destinations">
-                <h1 class="font-bold text-center lg:text-4xl text-2xl">Popular Destinations</h1>
-               
-            
-         
-
-       <!-- main div -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto gap-4 mt-10">
-                
-          
-           
-
-            <!-- first card -->
-             <div class="bg-white shadow-xl rounded-lg p-4">
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Maldives</h3>
-                <p class="font-bold text-xl text-blue-700">$999</p>
-                <p class="text-lg">Experience the paradise on Earth with pristine beaches and crystal clear waters.</p>
-                
-               </div>
-                </div>
-
-                 <!-- second card -->
-
-                  <div class="bg-white shadow-xl rounded-lg p-4">
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3dpdHplcmxhbmR8ZW58MHx8MHx8fDA%3D" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Switzerland</h3>
-                <p class="font-bold text-xl text-blue-700">$1299</p>
-                <p class="text-lg">Discover breathtaking alpine scenery and charming villages.</p>
-                
-               </div>
-               
-              </div>
-
-              <!-- third card -->
-
-                  <div class="bg-white shadow-xl rounded-lg p-4">
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SXRhbHl8ZW58MHx8MHx8fDA%3D" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Italy</h3>
-                <p class="font-bold text-xl text-blue-700">$850</p>
-                <p class="text-lg">Explore ancient ruins, vibrant culture, and delicious cuisine.</p>
-                
-               </div>
-               
-              </div>
-        </div>
-
-        </div>
-       <!-- Popular Destinations ends -->
+    
+    <!-- What Our Customers Say end here -->
 
 
 
-    <!-- Special Tour Packages start  -->
-     <div class="py-14 bg-violet-50">
-        <h1 class="font-bold text-center lg:text-4xl text-2xl">Special Tour Packages</h1>
+    <!-- Our Ambience  -->
+     <div class=" bg-yellow-100  ">
+     <div class="py-10 mb-10 " >
+        <h1 class="text-5xl text-center  text-amber-950 font-bold">Our Ambience</h1>
 
-         <!-- main div -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto gap-4 mt-10">
-                
-          <!-- first card -->
-             <div class="bg-white shadow-xl rounded-lg p-4">
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Luxury Beach Resort</h3>
-                <p class="text-lg">7 Days, 6 Nights in a premium villa.</p>
-                <div class="flex justify-between items-center">
-                      <p class="font-bold text-xl text-blue-700"><span class="line-through text-gray-700 md:block hidden ">$1500</span> $1200</p>
-                     <button class=" bg-blue-700 text-white rounded-full px-5 py-3 font-bold hover:bg-blue-500 cursor-pointer" >Book Now</button>
+     </div>
+
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-11/12 mx-auto">
+
+        <div class="h-60"> 
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop" class="h-full w-full rounded-lg" alt="">
+    </div>
+
+    <div class="h-60">
+        <img src="https://thriving-heliotrope-5927b5.netlify.app/images/photo3.jpg" class="h-full w-full rounded-lg" alt="">
+    </div>
+
+    <div class=" h-60">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887&auto=format&fit=crop"  class="h-full w-full rounded-lg"  alt="">
+    </div>
+
+    <div class="h-60">
+        <img src="https://thriving-heliotrope-5927b5.netlify.app/img/image1.png" class="h-full w-full rounded-lg"  alt="">
+
+    </div>
+
+    <div  class="h-60">
+        <img src="https://thriving-heliotrope-5927b5.netlify.app/images/photo1.jpg" class="h-full w-full rounded-lg" alt="">
+    </div>
+
+     <div class="h-60" >
+        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?cs=srgb&dl=pexels-chevanon-302899.jpg&fm=jpg"  class="h-full w-full rounded-lg"  alt="">
+
+    </div>
+
+    <div class="h-60">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQfN599BOIybZzE_LaaUCNeCgP3RvnW_kZ4rg4gYTLSAPMUiUlaywfLzzuMsOfMZOqkqw&usqp=CAU"  class="h-full w-full rounded-lg"  alt="">
+    </div>
+
+    <div class="h-60 ">
+        <img src="https://img.freepik.com/free-photo/pretty-hispanic-female-friends-having-fun-making-toast-with-coffee-cups-restaurant_662251-810.jpg?ga=GA1.1.1890969058.1720719749&semt=ais_items_boosted&w=740" class="h-full w-full rounded-lg"  alt="">
+    </div>
+     </div>
+     </div>
+
+     <!-- Visit Us -->
+
+     <!-- main div -->
+      <div class="w-11/12 mx-auto py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+             <!-- left side -->
+         <div class=" space-y-5">
+            <h1 class="text-4xl  text-amber-950 font-bold">Visit Us</h1>
+
+            <!-- 1st -->
+
+            <div class="flex items-center gap-2 "> 
+                <div class="">
+                     <img src="assets/icons8-location-50.png" class="w-5 h-5" alt="">
 
                 </div>
-              
-                
-               </div>
-               
-              </div>
-
-                 <!-- second card -->
-
-                  <div class="bg-white shadow-xl rounded-lg p-4">
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1740383235295-8c8e1eefe46b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SGltYWxheWFuJTIwQWR2ZW50dXJlJTIwVHJla3xlbnwwfHwwfHx8MA%3D%3D" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Himalayan Adventure Trek</h3>
-                <p class="text-lg">10 Days of thrilling mountain trekking.</p>
-
-                <div class="flex justify-between items-center">
-                    <p class="font-bold text-xl text-blue-700">$1800</p>
-                   <button class=" bg-blue-700 text-white rounded-full px-5 py-3 font-bold hover:bg-blue-500 cursor-pointer" >Book Now</button>
-
-                </div>
-                
-                
-                
-               </div>
-               
-              </div>
-
-              <!-- third card -->
-
-                  <div class="bg-white shadow-xl rounded-lg p-4"> 
-            <div class="h-60 ">
-                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=2070&auto=format&fit=crop" class="rounded-lg  h-full w-full" alt="">
-            </div>
-            <div class="space-y-5 mb-4">
-                <h3 class="text-2xl font-bold mt-4 ">Thailand Temple & Culture</h3>
-                  <p class="text-lg">5 Days in the culture, devotion, and exploration..</p>
-
-                  <div class="flex justify-between items-center">
-                    <p class="font-bold text-xl text-blue-700">$1100</p>
-                   <button class=" bg-blue-700 text-white rounded-full px-5 py-3 font-bold hover:bg-blue-500 cursor-pointer" >Book Now</button>
-
-                  </div>
-                
-              
-                
-               </div>
-               
-              </div>
-            </div>
-        </div>
-    <!-- Special Tour Packages end -->
-
-    <!-- Why Choose Us? start here -->
-     <div class=" p-14 bg-sky-50 space-y-10">
-        <h1 class="font-bold text-center lg:text-4xl text-2xl">Why Choose Us?</h1>
-        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto gap-4 ">
-
-          <!-- 1st card -->
-            <div class="text-center items-center space-y-4 ">
-                 <div class=" mx-auto  " >
-                 <img src="https://cdn-icons-png.flaticon.com/128/15567/15567437.png" class="h-14 w-14" alt="">
-                 </div>
-                 <h2 class="font-bold  text-2xl" > Best Price Guarantee</h2>
-                 <p class="font-medium text-sm">We offer the most competitive prices<br>for your dream vacations.</p>
-            </div>
-
-              <!-- 2nd card -->
-            <div class="text-center items-center space-y-4 ">
-                 <div class=" mx-auto  " >
-                 <img src="https://cdn-icons-png.flaticon.com/128/4459/4459101.png" class="h-14 w-14" alt="">
-                 </div>
-                 <h2 class="font-bold  text-2xl" >24/7 Support</h2>
-                 <p class="font-medium text-sm">Our team is available round the<br>clock to assist you.</p>
-            </div>
-
-            <!-- 3rd card -->
-            <div class="text-center items-center space-y-4 ">
-                 <div class=" mx-auto  " >
-                 <img src="https://cdn-icons-png.flaticon.com/128/1256/1256650.png" class="h-14 w-14" alt="">
-                 </div>
-                 <h2 class="font-bold  text-2xl" >1000+ Happy Travelers</h2>
-                 <p class="font-medium text-sm">Join our community of satisfied<br>adventurers from around the<br>globe.</p>
-            </div>
-
-            
-            <!-- 4th card -->
-            <div class="text-center items-center space-y-4 ">
-                 <div class=" mx-auto  " >
-                 <img src="https://cdn-icons-png.flaticon.com/128/10554/10554213.png" class="h-14 w-14" alt="">
-                 </div>
-                 <h2 class="font-bold  text-2xl" >Customizable Trips</h2>
-                 <p class="font-medium text-sm">We tailor trips to your specific<br>interests and preferences.</p>
-            </div>
+                <div>   
+                    <h3 class="text-xl font-bold  text-amber-950">Location</h3>
+                <p class="text-base font-medium text-gray-800">123 Coffee Lane, Downtown, CA 90210</p>
              </div>
-           </div>
-    <!-- Why Choose Us? end here -->
+             </div>
 
+             <!-- 2nd -->
 
-    <!-- What Our Travelers Say  start here-->
-     <div class="m-14">
-        <h1 class="font-bold text-center lg:text-4xl text-2xl pb-8">What Our Travelers Say</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-6">
-            <!-- 1st card -->
-            <div class="shadow-lg rounded-xl justify-center items-center text-center p-4">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" class="h-18 w-18 rounded-full" alt="">
+            <div class="flex items-center gap-2 "> 
+                <div class="">
+                     <img src="assets/icons8-clock-50.png"  class="w-5 h-5"c  alt="">
+
                 </div>
-                <p class="text-base font-medium text-gray-800">"An unforgettable experience! Every detail was perfectly planned. Highly recommended for anyone looking for a hassle-free adventure."</p>
-                <h4 class="font-bold text-2xl selection:">John Doe</h4>
-                <p class="text-base font-medium text-gray-800">California, USA</p>
-            </div>
+                <div>   
+                    <h3 class="text-xl font-bold  text-amber-950">Hours</h3>
+                <p class="text-base font-medium text-gray-800">Monday - Saturday: 7:00 AM - 8:00 PM <br>Sunday: 8:00 AM - 6:00 PM</p>
+             </div>
+             </div>
 
-             <!-- 2nd  card -->
-            <div class="shadow-lg rounded-xl justify-center items-center text-center p-4">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" class="h-18 w-18 rounded-full" alt="">
+             <!-- 3rd -->
+
+            <div class="flex items-center gap-2"> 
+                <div class="">
+                     <img src="assets/icons8-call-30.png"  class="w-5 h-5" alt="">
+
                 </div>
-                <p class="text-base font-medium text-gray-800">"The best travel agency I've ever worked with. Their support team was amazing and helped me customize my trip to Switzerland."</p>
-                <h4 class="font-bold text-2xl selection:">Jane Smith</h4>
-                <p class="text-base font-medium text-gray-800">London, UK</p>
-            </div>
+                <div>   
+                    <h3 class="text-xl font-bold  text-amber-950">Contact</h3>
+                <p class="text-base font-medium text-gray-800">(123) 456-7890</p>
+             </div>
+             </div>
 
-            
-             <!--3rd  card -->
-            <div class="shadow-lg rounded-xl justify-center items-center text-center p-4">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop" class="h-18 w-18 rounded-full" alt="">
-                </div>
-                <p class="text-base font-medium text-gray-800">"Great packages and very good prices. The Maldives trip was a dream come true. Will definitely book again!"</p>
-                <h4 class="font-bold text-2xl selection:">Maria Garcia</h4>
-                <p class="text-base font-medium text-gray-800">Madrid, Spain</p>
-            </div>
+             <button class="border-2 bg-amber-950 text-white py-2 px-4 rounded-xl cursor-pointer hover:bg-yellow-700 font-bold ">Get Directions</button>
 
+         </div>
 
+         <!-- right side -->
+          <div>
+            <iframe class="shadow-lg rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.719692482813!2d-118.25319528478494!3d34.05149398060645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c63425425e7d%3A0x4c2436979644f126!2sGrand%20Park!5e0!3m2!1sen!2sus!4v1620248408332!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-
-
-        </div>
- 
-     </div>
-    <!-- What Our Travelers Say  end here-->
-
-    <!-- Our Travel Gallery start  -->
-     <div>
-        <h1 class="font-bold text-center lg:text-4xl text-2xl pb-8">Our Travel Gallery</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto w-11/12 gap-5">
-
-        <div>
-            <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2070&auto=format&fit=crop" class=" w-full  rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop"  class=" w-full rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"  class=" w-full rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1887&auto=format&fit=crop" class="w-full h-60 rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2070&auto=format&fit=crop" class=" w-full  rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop"  class=" w-full rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"  class=" w-full rounded-xl" alt="">
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1887&auto=format&fit=crop" class="w-full  h-60  rounded-xl" alt="">
-        </div>
-
-
-
-
-
-
+          </div>
 
         </div>
        
-     </div>
-    <!-- Our Travel Gallery end -->
+
+      </div>
+
+      <!-- footer section -->
+       <div class="text-center bg-amber-950 space-y-6 py-10">
+        <h1 class="text-5xl  text-white font-bold " >Get 10% Off Your First Order</h1>
+        <p  class="text-xl  text-white font-semibold">Subscribe to our newsletter for special offers, new menu alerts, and coffee secrets.</p>
+
+        <div class="flex mx-auto w-11/12 items-center justify-center">
+              <form class="">
+            <input type="email" required class="  text-gray-700 bg-white p-3 rounded-lg w-[500px]" placeholder="Enter your email address">
+            <button class="border-2 bg-amber-800 text-white h-12 w-30 rounded-xl cursor-pointer hover:bg-white hover:text-black font-bold ">Subscribe</button>
+
+
+        </form>
+        </div>
+
+        <div class="flex mx-auto w-11/12 gap-5 justify-center">
+            
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook  text-white text-2xl"></i></a>
+         <a href="https://www.instagram.com/?hl=en">   <i class="fa-brands fa-instagram  text-white  text-2xl"></i></a>
+         <a href="https://x.com/"> <i class="fa-brands fa-twitter  text-white  text-2xl"></i></a>
+         <a href="https://www.youtube.com/">  <i class="fa-brands fa-youtube text-white  text-2xl"></i></a>
+        </div>
+
+        <hr class="w-[80%] mx-auto text-white">
+        <p class="text-white">© 2025 The Coffee House. All Rights Reserved. Designed by Rimpa Kasundi.</p>
+      
+       </div>
+
+
+
+       
+
  
 
 
-
-
+  
     
 </body>
 </html>
